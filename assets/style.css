@@ -1,15 +1,66 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Cor de fundo geral */
 body {
-  font-family: Arial, sans-serif;
+  background-color: #f7f9fc;
+  font-family: 'Segoe UI', sans-serif;
 }
-table {
-  width: 100%;
-  border-collapse: collapse;
+
+/* Cartões com sombra leve */
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
-th, td {
-  padding: 8px;
-  text-align: left;
-  border: 1px solid #ddd;
+
+/* Botões personalizados */
+.btn-primary {
+  background-color: #0066cc;
+  border: none;
 }
-th {
-  background-color: #f2f2f2;
+.btn-primary:hover {
+  background-color: #0052a3;
+}
+
+.btn-outline-primary {
+  border-color: #0066cc;
+  color: #0066cc;
+}
+.btn-outline-primary:hover {
+  background-color: #0066cc;
+  color: #fff;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border: none;
+}
+.btn-success:hover {
+  background-color: #218838;
+}
+
+/* Títulos e texto */
+h3 {
+  color: #333;
+  font-weight: 600;
+}
+
+/* Formulários */
+input.form-control {
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+input.form-control:focus {
+  border-color: #0066cc;
+  box-shadow: 0 0 0 0.2rem rgba(0, 102, 204, 0.25);
+}
+
+/* Espaço entre botões */
+.d-grid .btn {
+  transition: all 0.2s ease;
 }
