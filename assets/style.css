@@ -5,34 +5,46 @@
   box-sizing: border-box;
 }
 
-/* Cor de fundo geral */
+/* Cor de fundo escura */
 body {
-  background-color: #f7f9fc;
+  background-color: #121212;
+  color: #f1f1f1;
   font-family: 'Segoe UI', sans-serif;
 }
 
-/* Cartões com sombra leve */
+/* Cartões com fundo escuro e borda leve */
 .card {
+  background-color: #1e1e1e;
   border: none;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
 }
 
-/* Botões personalizados */
+/* Botões principais */
 .btn-primary {
-  background-color: #0066cc;
+  background-color: #007bff;
   border: none;
 }
 .btn-primary:hover {
-  background-color: #0052a3;
+  background-color: #0056b3;
 }
 
 .btn-outline-primary {
-  border-color: #0066cc;
-  color: #0066cc;
+  border-color: #007bff;
+  color: #007bff;
 }
 .btn-outline-primary:hover {
-  background-color: #0066cc;
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Botões escuros */
+.btn-outline-dark {
+  border-color: #888;
+  color: #ccc;
+}
+.btn-outline-dark:hover {
+  background-color: #333;
   color: #fff;
 }
 
@@ -41,26 +53,41 @@ body {
   border: none;
 }
 .btn-success:hover {
-  background-color: #218838;
+  background-color: #1c7430;
 }
 
-/* Títulos e texto */
+.btn-secondary {
+  background-color: #6c757d;
+  border: none;
+}
+.btn-secondary:hover {
+  background-color: #565e64;
+}
+
+/* Títulos */
 h3 {
-  color: #333;
+  color: #ffffff;
   font-weight: 600;
 }
 
-/* Formulários */
+/* Inputs */
 input.form-control {
-  border-radius: 6px;
-  border: 1px solid #ccc;
+  background-color: #2a2a2a;
+  color: #f1f1f1;
+  border: 1px solid #444;
 }
 input.form-control:focus {
-  border-color: #0066cc;
-  box-shadow: 0 0 0 0.2rem rgba(0, 102, 204, 0.25);
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
-/* Espaço entre botões */
-.d-grid .btn {
-  transition: all 0.2s ease;
+/* Logo texto */
+.logo-text {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #00bfff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
