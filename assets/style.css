@@ -23,17 +23,20 @@ body {
 .logo-sub {
   font-size: 1rem;
   color: #00ffff;
-  opacity: 0.8;
+  text-shadow: 0 0 6px #00ffff;
+  opacity: 0.9;
   margin-bottom: 10px;
 }
 
 .descricao-login {
   font-size: 1rem;
   color: #ffffff;
-  opacity: 0.8;
+  opacity: 0.7;
   text-align: center;
   margin-bottom: 20px;
+  font-style: italic;
 }
+
 
 /* 🔷 Cartões */
 .card {
@@ -111,4 +114,19 @@ label.form-label,
 .btn-outline-secondary:hover {
   background-color: #333;
   color: #ffff66;
+}
+.card-body {
+  animation: fadeInUp 0.8s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
