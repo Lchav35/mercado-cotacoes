@@ -1,4 +1,4 @@
-/* Fundo escuro com visual TRON */
+/* 🔷 Visual base */
 body {
   background-color: #0a0a0a;
   background-image: url('https://www.transparenttextures.com/patterns/circuits.png');
@@ -8,32 +8,60 @@ body {
   color: #ffff66;
 }
 
-/* Logo principal */
+/* 🔷 Logo principal */
 .logo-text {
-  font-size: 2rem;
-  color: #ffff66;
+  font-size: 2.2rem;
+  font-weight: 500;
   font-style: italic;
+  color: #ffff66;
   text-shadow: 0 0 12px #ffff66;
-  margin-bottom: 0;
+  text-transform: uppercase;
   letter-spacing: 2px;
+  margin-bottom: 0.2rem;
 }
 
 .logo-sub {
-  font-size: 0.9rem;
+  font-size: 1rem;
+  color: #00ffff;
+  opacity: 0.8;
+  margin-bottom: 10px;
+}
+
+.descricao-login {
+  font-size: 1rem;
   color: #ffffff;
-  opacity: 0.7;
+  opacity: 0.8;
+  text-align: center;
   margin-bottom: 20px;
 }
 
-/* Cartão central */
+/* 🔷 Cartões */
 .card {
-  background-color: rgba(18, 18, 18, 0.95);
+  background-color: rgba(20, 20, 20, 0.95);
   border: 2px solid #ffffff;
   border-radius: 12px;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
 }
 
-/* Botões */
+/* 🔷 Inputs */
+input.form-control {
+  background-color: #1a1a1a;
+  color: #ffff66;
+  border: 1px solid #555;
+}
+input.form-control:focus {
+  border-color: #ffff66;
+  box-shadow: 0 0 5px rgba(255, 255, 102, 0.5);
+}
+
+/* 🔷 Labels */
+label.form-label,
+.form-check-label {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* 🔷 Botões */
 .btn-primary {
   background-color: #ffff66;
   color: #000;
@@ -41,7 +69,8 @@ body {
   font-weight: bold;
 }
 .btn-primary:hover {
-  background-color: #fffc3a;
+  background-color: #fefb4a;
+  color: #000;
 }
 
 .btn-outline-primary {
@@ -60,24 +89,4 @@ body {
 .btn-outline-secondary:hover {
   background-color: #333;
   color: #ffff66;
-}
-
-/* Formulários */
-input.form-control {
-  background-color: #1a1a1a;
-  color: #ffff66;
-  border: 1px solid #888;
-}
-input.form-control:focus {
-  border-color: #ffff66;
-  box-shadow: 0 0 0 0.2rem rgba(255,255,102,0.25);
-}
-
-label.form-label {
-  color: #ffffff;
-  font-weight: bold;
-}
-
-.form-check-label {
-  color: #ccc;
 }
